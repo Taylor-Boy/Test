@@ -1,0 +1,100 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 12 1131523160@qq.com, 213, LIC=WHYHL-0GGHB-VE8HA-15254-YUSX5-AI4T3
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.25.2.0
+Toolchain Path:  E:\MDK5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+D:\Work\WSN\STM32L4\STM32L475\GPIO\MDK-ARM\GPIO.uvprojx
+Project File Date:  01/06/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'E:\MDK5\ARM\ARMCC\Bin'
+Build target 'GPIO'
+compiling main.c...
+../Src/main.c(146): warning:  #188-D: enumerated type mixed with another type
+  	LED_B_ON;
+../Src/main.c(147): warning:  #188-D: enumerated type mixed with another type
+  	LED_G_ON;
+../Src/main.c(148): warning:  #188-D: enumerated type mixed with another type
+  	LED_R_ON;
+../Src/main.c(115): warning:  #177-D: variable "data"  was declared but never referenced
+  	unsigned char data[MAX_RCV_LEN];
+../Src/main.c(584): warning:  #940-D: missing return statement at end of non-void function "HAL_InitTick" 
+  }
+../Src/main.c(404): warning:  #177-D: function "MX_IWDG_Init"  was declared but never referenced
+  static void MX_IWDG_Init(void)
+../Src/main.c: 6 warnings, 0 errors
+compiling stm32l4xx_it.c...
+../Src/stm32l4xx_it.c(40): warning:  #1295-D: Deprecated declaration HAL_GPIO_EXTI_Callback_KEY1 - give arg types
+  void HAL_GPIO_EXTI_Callback_KEY1();
+../Src/stm32l4xx_it.c(280): warning:  #223-D: function "strlen" declared implicitly
+  	Len = strlen(USART1RECV);
+../Src/stm32l4xx_it.c(283): warning:  #188-D: enumerated type mixed with another type
+  		LED_B_OFF;
+../Src/stm32l4xx_it.c(284): warning:  #188-D: enumerated type mixed with another type
+  		LED_G_ON;
+../Src/stm32l4xx_it.c(285): warning:  #188-D: enumerated type mixed with another type
+  		LED_R_ON;
+../Src/stm32l4xx_it.c(291): warning:  #188-D: enumerated type mixed with another type
+  		LED_B_ON;
+../Src/stm32l4xx_it.c(292): warning:  #188-D: enumerated type mixed with another type
+  		LED_G_ON;
+../Src/stm32l4xx_it.c(293): warning:  #188-D: enumerated type mixed with another type
+  		LED_R_OFF;
+../Src/stm32l4xx_it.c(301): warning:  #188-D: enumerated type mixed with another type
+  		LED_B_ON;
+../Src/stm32l4xx_it.c(302): warning:  #188-D: enumerated type mixed with another type
+  		LED_G_OFF;
+../Src/stm32l4xx_it.c(303): warning:  #188-D: enumerated type mixed with another type
+  		LED_R_ON;
+../Src/stm32l4xx_it.c: 11 warnings, 0 errors
+compiling Uart.c...
+..\Src\Uart.c(217): warning:  #1-D: last line of file ends without a newline
+  */
+..\Src\Uart.c: 1 warning, 0 errors
+linking...
+Program Size: Code=13652 RO-data=496 RW-data=24 ZI-data=4760  
+"GPIO\GPIO.axf" - 0 Error(s), 18 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM.CMSIS.5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L4xx_DFP.2.0.0.pack
+                Keil.STM32L4xx_DFP.2.0.0
+                STMicroelectronics STM32L4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_GPIO
+  E:\MDK5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  E:\MDK5\ARM\PACK\Keil\STM32L4xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>
